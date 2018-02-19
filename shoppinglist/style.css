@@ -1,26 +1,20 @@
+body{
+    margin: 0 auto;
+}
 .page{
     display: grid;
     height: 100%;
-    grid-template-columns: 2fr 1fr 1fr;
-    grid-template-rows: auto 1fr 3fr;
+    grid-template-columns: 1fr 10px 2fr 0px 1fr;
+    grid-template-rows: 2fr 0px 2fr 0px 1fr;
     grid-template-areas: 
         "title title title"
-        "main header header"
-        "main sidebar footer";
+        "main header main"
+        "footer footer footer";
 }
 
 .title{
-    grid-area: footer;
+    grid-area: header;
     background-color: beige;
+    height: 10em;
+    width: 10em;
 }
-
-.grid {
-    display: grid;
-    height: 100px;
-    grid-template: repeat(4, 1fr) / 50px 100px;
-  }
-  
-  .item1 {
-    background-color: lime;
-    grid-area: 2 / 2 / auto / span 3;
-  }
