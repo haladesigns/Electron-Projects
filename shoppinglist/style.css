@@ -12,7 +12,7 @@
 .title{
     grid-area: footer;
     background-color: antiquewhite;
-    height: 100px;
+    height: 200px;
 }
 
 .grid {
